@@ -1,0 +1,163 @@
+% Encoding und Sprache -------------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc} % z.B. Umlaute auch als solche Drucken
+\usepackage{textcomp} % Euro-Zeichen etc.
+% \usepackage{relsize} % Schriftgröße relativ festlegen
+\usepackage{mathptmx} % gut lesbare Schriftart
+\usepackage{lmodern} % Schriftart bleibt auch bei fettgedruckten Wörtern schön
+
+% Tabellen --------------------------------------------------------------------
+% \usepackage{tabularx}
+% für lange Tabellen
+% \usepackage{longtable}
+% \usepackage{array}
+% \usepackage{ragged2e}
+% \usepackage{lscape}
+
+% Graphiken -------------------------------------------------------------------
+\usepackage{graphicx}
+\usepackage{graphics}
+% \usepackage{floatflt} % zum Umfließen von Bildern
+
+% sonstiges -------------------------------------------------------------------
+% \usepackage{amsmath,amsfonts} % Befehle aus AMSTeX für mathematische Symbole
+% \usepackage{enumitem} % anpassbare Enumerates/Itemizes
+\usepackage{xspace} % entscheidet, ob Leerzeichen hinter Makro oder nicht
+
+% \usepackage{makeidx} % für Index-Ausgabe mit \printindex
+\usepackage[printonlyused]{acronym} % Akronyme: es werden nur benutzte Definitionen aufgelistet
+
+\usepackage{setspace}
+\usepackage{geometry}
+
+% Symbolverzeichnis
+\usepackage[intoc]{nomencl}
+\let\abbrev\nomenclature
+\setlength{\nomlabelwidth}{.25\hsize}
+\renewcommand{\nomlabel}[1]{#1 \dotfill}
+\setlength{\nomitemsep}{-\parsep}
+
+\usepackage{varioref} % Elegantere Verweise. „auf der nächsten Seite“
+\usepackage{chngcntr} % fortlaufendes Durchnummerieren der Fußnoten
+\usepackage{ifthen} % bei der Definition eigener Befehle benötigt
+\setlength{\marginparwidth }{2cm} % Fehlermeldung vermeiden
+\usepackage{todonotes} % definiert u.a. die Befehle \todo und \listoftodos
+\usepackage{natbib} % wichtig für korrekte Zitierweise
+\bibpunct[: ]{(}{)}{;}{a}{ }{,}
+
+\usepackage{xcolor}
+\definecolor{Blau}{rgb}{0, 0.28, 0.56}
+
+
+% \usepackage{pdfpages}
+% \pdfminorversion=5 % erlaubt das Einfügen von pdf-Dateien bis Version 1.7, ohne eine Fehlermeldung zu werfen (keine Garantie für fehlerfreies Einbetten!)
+
+\usepackage[
+bookmarks,
+bookmarksnumbered,
+bookmarksopen=true,
+bookmarksopenlevel=1,
+colorlinks=true,
+% diese Farbdefinitionen zeichnen Links im PDF farblich aus
+linkcolor=Blau, % einfache interne Verknüpfungen
+anchorcolor=Blau,% Ankertext
+citecolor=Blau, % Verweise auf Literaturverzeichniseinträge im Text
+filecolor=Blau, % Verknüpfungen, die lokale Dateien öffnen
+menucolor=Blau, % Acrobat-Menüpunkte
+urlcolor=Blau,
+% diese Farbdefinitionen sollten für den Druck verwendet werden (alles schwarz)
+%linkcolor=black, % einfache interne Verknüpfungen
+%anchorcolor=black, % Ankertext
+%citecolor=black, % Verweise auf Literaturverzeichniseinträge im Text
+%filecolor=black, % Verknüpfungen, die lokale Dateien öffnen
+%menucolor=black, % Acrobat-Menüpunkte
+%urlcolor=black,
+%
+%backref, % Quellen werden zurück auf ihre Zitate verlinkt
+pdftex,
+plainpages=false, % zur korrekten Erstellung der Bookmarks
+pdfpagelabels=true, % zur korrekten Erstellung der Bookmarks
+hypertexnames=false, % zur korrekten Erstellung der Bookmarks
+linktocpage % Seitenzahlen anstatt Text im Inhaltsverzeichnis verlinken
+]{hyperref}
+
+
+
+% zum Einbinden von Programmcode -----------------------------------------------
+\usepackage{listings}
+\definecolor{hellgelb}{rgb}{1,1,0.9}
+\definecolor{colKeys}{rgb}{0,0,1}
+\definecolor{colIdentifier}{rgb}{0,0,0}
+\definecolor{colComments}{rgb}{0,0.5,0}
+\definecolor{colString}{rgb}{1,0,0}
+\lstset{
+    float=hbp,
+    basicstyle=\footnotesize\ttfamily,
+    identifierstyle=\color{colIdentifier},
+    keywordstyle=\color{colKeys},
+    stringstyle=\color{colString},
+    commentstyle=\color{colComments},
+    backgroundcolor=\color{hellgelb},
+    columns=flexible,
+    tabsize=2,
+    frame=single,
+    extendedchars=true,
+    showspaces=false,
+    showstringspaces=false,
+    numbers=left,
+    numberstyle=\tiny,
+    breaklines=true,
+    breakautoindent=true,
+    captionpos=b,
+}
+\lstdefinelanguage{cs}{
+    sensitive=false,
+    morecomment=[l]{//},
+    morecomment=[s]{/*}{*/},
+    morestring=[b]",
+    morekeywords={
+        abstract,event,new,struct,as,explicit,null,switch
+        base,extern,object,this,bool,false,operator,throw,
+        break,finally,out,true,byte,fixed,override,try,
+        case,float,params,typeof,catch,for,private,uint,
+        char,foreach,protected,ulong,checked,goto,public,unchecked,
+        class,if,readonly,unsafe,const,implicit,ref,ushort,
+        continue,in,return,using,decimal,int,sbyte,virtual,
+        default,interface,sealed,volatile,delegate,internal,short,void,
+        do,is,sizeof,while,double,lock,stackalloc,
+        else,long,static,enum,namespace,string},
+}
+\lstdefinelanguage{php}{
+    sensitive=false,
+    morecomment=[l]{/*},
+    morestring=[b]",
+    morestring=[b]',
+    alsodigit={-,*},
+    morekeywords={
+        abstract,and,array,as,break,case,catch,cfunction,class,clone,const,
+        continue,declare,default,do,else,elseif,enddeclare,endfor,endforeach,
+        endif,endswitch,endwhile,extends,final,for,foreach,function,global,
+        goto,if,implements,interface,instanceof,namespace,new,old_function,or,
+        private,protected,public,static,switch,throw,try,use,var,while,xor
+        die,echo,empty,exit,eval,include,include_once,isset,list,require,
+        require_once,return,print,unset},
+}
+
+% \usepackage{titlesec}
+\usepackage{scrhack} % Fehlermeldung vermeiden
+\usepackage[
+%   automark, % Kapitelangaben in Kopfzeile automatisch erstellen
+    headsepline, % Trennlinie unter Kopfzeile
+    ilines, % Trennlinie linksbündig ausrichten
+    singlespacing=true
+]{scrlayer-scrpage}
+
+% Metadaten für das PDF-Dokument
+\hypersetup{
+    pdftitle={\titel{} -- \untertitel},
+    pdfauthor={\autor},
+    pdfcreator={\autor},
+    pdfsubject={\titel{} -- \untertitel},
+    pdfkeywords={\titel{} -- \untertitel},
+}

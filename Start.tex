@@ -1,0 +1,42 @@
+\documentclass[
+    12pt, % Schriftgröße
+    ngerman, % für Umlaute, Silbentrennung etc.
+    a4paper, % Papierformat
+    oneside, % einseitiges Dokument
+    titlepage, % es wird eine Titelseite verwendet
+    parskip=half, % Abstand zwischen Absätzen (halbe Zeile)
+    headings=normal, % Größe der Überschriften verkleinern
+    listof=totoc, % Verzeichnisse im Inhaltsverzeichnis aufführen
+    bibliography=totoc, % Literaturverzeichnis im Inhaltsverzeichnis aufführen
+    index=totoc, % Index im Inhaltsverzeichnis aufführen
+    captions=tableheading, % Beschriftung von Tabellen unterhalb ausgeben
+]{scrarticle}
+
+\input{Parameter}
+\input{../../Packages}
+\input{../../Seitenstil}
+\input{../../Befehle}
+\makenomenclature
+
+\begin{document}
+
+    \input{../../Deckblatt}
+
+    \pagenumbering{Roman}
+    \tableofcontents
+    \clearpage
+    \renewcommand{\lstlistlistingname}{Verzeichnis der Listings}
+    \input{Verzeichnisse}
+    \clearpage
+
+% Abkürzungsverzeichnis --------------------------------------------------------
+    \newcommand{\abkvz}{Abkürzungsverzeichnis}
+    \renewcommand{\nomname}{\abkvz}
+    \section*{\abkvz}
+    \addcontentsline{toc}{section}{\abkvz}
+    \input{../../Abkuerzungen}
+    \clearpage
+
+    % Inhalt
+    \clearpage
+    \pagenumbering{arabic}

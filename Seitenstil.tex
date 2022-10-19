@@ -1,0 +1,42 @@
+% Seitenränder -----------------------------------------------------------------
+\setlength{\topskip}{\ht\strutbox} % behebt Warnung von geometry
+\geometry{a4paper,left=25mm,right=20mm,top=25mm,bottom=25mm,includefoot,footskip=15mm}
+
+% Kopfzeile
+\renewcommand{\headfont}{\normalfont} % Schriftform der Kopfzeile
+\ihead{\large{\textsc{\titel}}\\ \small{\untertitel} \\[2ex] \textit{\ihead}} % Titel, Untertitel und Trennstrich in Kopfzeile
+% \ihead{\large{\textsc{\titel}}\\ \small{\untertitel} \\[2ex] \textit{\headmark}} % Titel, Untertitel, Kapitel und Trennstrich in Kopfzeile
+% Dazu muss die dadrüberliegende Zeile kommentiert werden und im usepackage-Befehl von {scrlayer-scrpage} in Packages das Automark auskommentiert werden
+\chead{} % nichts mittig in Kopfzeile
+\ohead{\includegraphics[scale=0.3]{../../Bilder/PHWT Logo}} % PHWT-Logo rechts in Kopfzeile
+\setlength{\headheight}{20mm} % Höhe der Kopfzeile
+
+% Fußzeile
+\ifoot{\autor, \jahr}
+\cfoot{}
+\ofoot{\pagemark}
+
+\spacing{1.3} % Zeilenabstand 1,3 Standard
+\frenchspacing % erzeugt ein wenig mehr Platz hinter einem Punkt
+
+% Schusterjungen und Hurenkinder vermeiden
+\clubpenalty = 10000
+\widowpenalty = 10000
+\displaywidowpenalty = 10000
+
+\counterwithout{footnote}{section} % Fußnoten fortlaufend durchnummerieren
+\setcounter{tocdepth}{3} % im Inhaltsverzeichnis werden die Kapitel bis zum Level der subsubsection übernommen (eigentlich mit \subsubsectionlevel anstatt 3)
+\setcounter{secnumdepth}{3} % Kapitel bis zum Level der subsubsection werden nummeriert (eigentlich mit \subsubsectionlevel anstatt 3)
+
+% Aufzählungen anpassen
+\renewcommand{\labelenumi}{\arabic{enumi}.}
+\renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}.}
+\renewcommand{\labelenumiii}{\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}}
+
+% Tabellenfärbung:
+\definecolor{heading}{rgb}{0.64,0.78,0.86}
+\definecolor{odd}{rgb}{0.9,0.9,0.9}
+
+% auch subsubsection nummerieren
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
