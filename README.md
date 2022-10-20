@@ -14,14 +14,15 @@
   * Compiler: pdfLaTeX
   * PDF Viewer: No PDF Viewer oder Built-in PDF Viewer (PDF Viewer Plugin benötigt)
   * Main file to compile: {...}/Ausarbeitungen/{Vorlage}/{Dokument.tex}
-  * Always compile at least twic
+  * Directory for auxiliery files: {...}/auxil
+  * Always compile at least twice: false
   * Output format: PDF
   * LaTeX Distribution: MiKTeX
     
   ###### Neue Konfiguration hinzufügen (kompiliert Bibliografie):
   * BibTeX
   * Compiler: BibTeX
-  * Main file that includews bibliography: {...}/Ausarbeitungen/{Vorlage}/{Dokument.tex}
+  * Main file that includes bibliography: {...}/Ausarbeitungen/{Vorlage}/{Dokument.tex}
   * Working directory for bibtex: {...}/Ausarbeitungen/auxil
     
   ###### Neue Konfiguration hinzufügen (kompiliert TeX-Dokument mit Bibliografie):
@@ -29,7 +30,7 @@
   * Compiler: pdfLaTeX
   * PDF Viewer: No PDF Viewer oder Built-in PDF Viewer (PDF Viewer Plugin benötigt)
   * Main file to compile: {...}/Ausarbeitungen/{Vorlage}/{Dokument.tex}
-  * Always compile at least twice
+  * Always compile at least twice: true
   * Output format: PDF
   * LaTeX Distribution: MiKTeX
   * External LaTeX programs: {BibTeX Konfiguration}
@@ -43,10 +44,11 @@
 ### Neue Ausarbeitung 
 * Neue Ausarbeitungen können im Ordner "Ausarbeitungen" erstellt werden. Dazu empfehlt es sich, den Ordner "Vorlage" zu kopieren.
 * Der Inhalt der Datei "Parameter.tex" muss auf die jeweilige Ausarbeitung angepasst werden. Es ergibt Sinn, die Datei auch in der Vorlage anzupassen, z.B. den Wert * für Matrikelnummer.
-* Der Name der Datei "Dokument.tex" sollte auf die jeweilige Ausarbeitung angepasst werden. Dieserr Name muss in die Run Configuration eingertagen werden und ist der Name der erstellten PDF-Datei.
+* Der Name der Datei "Dokument.tex" sollte auf die jeweilige Ausarbeitung angepasst werden. Dieser Name muss in die Run Configuration eingetragen werden und ist der Name der erstellten PDF-Datei.
 
 ### Ausarbeitung kompilieren
 * Wenn sich seit des letzten Kompilats Änderungen an der Bibliograpfie ergeben haben, wird die zuletzt erläuterte Konfiguration ausgeführt.
 * Wenn sich seit des letzten Kompilats keine Änderungen an der Bibliograpfie ergeben haben, wird die zuerst erläuterte Konfiguration ausgeführt.
 
 * Wenn kein Kompilierfehler auftritt, wird die PDF-Datei in /out/ gespeichert.
+* Sollte eine neue Section hinzugekommen sein, muss das Dokument zweimal kompiliert werden, damit das Inhaltsverzeichnis die neue Section anzeigt.
