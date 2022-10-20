@@ -14,7 +14,8 @@
   * Compiler: pdfLaTeX
   * PDF Viewer: No PDF Viewer oder Built-in PDF Viewer (PDF Viewer Plugin benötigt)
   * Main file to compile: {...}/Ausarbeitungen/{Vorlage}/{Dokument.tex}
-  * Directory for auxiliery files: {...}/auxil
+  * Directory for auxiliary files: {...}/auxil
+  * Directory for output files: {...}/../Dokumente
   * Always compile at least twice: false
   * Output format: PDF
   * LaTeX Distribution: MiKTeX
@@ -23,13 +24,15 @@
   * BibTeX
   * Compiler: BibTeX
   * Main file that includes bibliography: {...}/Ausarbeitungen/{Vorlage}/{Dokument.tex}
-  * Working directory for bibtex: {...}/Ausarbeitungen/auxil
+  * Working directory for bibtex: {...}/auxil
     
   ###### Neue Konfiguration hinzufügen (kompiliert TeX-Dokument mit Bibliografie):
   * LaTeX
   * Compiler: pdfLaTeX
   * PDF Viewer: No PDF Viewer oder Built-in PDF Viewer (PDF Viewer Plugin benötigt)
   * Main file to compile: {...}/Ausarbeitungen/{Vorlage}/{Dokument.tex}
+  * Directory for auxiliary files: {...}/auxil
+  * Directory for output files: {...}/../Dokumente
   * Always compile at least twice: true
   * Output format: PDF
   * LaTeX Distribution: MiKTeX
@@ -43,7 +46,7 @@
 
 ### Neue Ausarbeitung 
 * Neue Ausarbeitungen können im Ordner "Ausarbeitungen" erstellt werden. Dazu empfehlt es sich, den Ordner "Vorlage" zu kopieren.
-* Der Inhalt der Datei "Parameter.tex" muss auf die jeweilige Ausarbeitung angepasst werden. Es ergibt Sinn, die Datei auch in der Vorlage anzupassen, z.B. den Wert * für Matrikelnummer.
+* Der Inhalt der Datei "Parameter.tex" muss auf die jeweilige Ausarbeitung angepasst werden. Es ergibt Sinn, die Datei auch in der Vorlage anzupassen, z.B. den Wert für Matrikelnummer.
 * Der Name der Datei "Dokument.tex" sollte auf die jeweilige Ausarbeitung angepasst werden. Dieser Name muss in die Run Configuration eingetragen werden und ist der Name der erstellten PDF-Datei.
 
 ### Ausarbeitung kompilieren
