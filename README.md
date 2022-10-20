@@ -48,6 +48,7 @@
 * Neue Ausarbeitungen können im Ordner "Ausarbeitungen" erstellt werden. Dazu empfehlt es sich, den Ordner "Vorlage" zu kopieren.
 * Der Inhalt der Datei "Parameter.tex" muss auf die jeweilige Ausarbeitung angepasst werden. Es ergibt Sinn, die Datei auch in der Vorlage anzupassen, z.B. den Wert für Matrikelnummer.
 * Der Name der Datei "Dokument.tex" sollte auf die jeweilige Ausarbeitung angepasst werden. Dieser Name muss in die Run Configuration eingetragen werden und ist der Name der erstellten PDF-Datei.
+* Neue Sections sollten in einer neuen .tex Datei geschrieben werden. Diese sollten in dem Ordner Inhalt gespeichert werden und müssen nach dem Erstellen an der richtigen Stelle in Dokument.tex ergänzt werden.
 
 ### Ausarbeitung kompilieren
 * Wenn sich seit des letzten Kompilats Änderungen an der Bibliograpfie ergeben haben, wird die zuletzt erläuterte Konfiguration ausgeführt.
