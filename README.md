@@ -8,7 +8,7 @@
   * TeXiFy IDEA Plugin
   * PDF Viewer Plugin (optional: zum Ansehen der PDF-Datei in IntelliJ)
   
-  #### Run Configurations (werden automatisch erstellt)
+  #### Run Configurations (werden automatisch erstellt; *beim Working directory der bibtex-Konfiguration kann es allerdings zu Fehlern kommen*)
   ###### Neue Konfiguration hinzufügen (kompiliert TeX-Dokument):
   * LaTeX
   * Compiler: pdfLaTeX
