@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9db2f0bd-872f-4d4e-9dae-a433a7646144" name="Changes" comment="Ergaenze .gitignore" />
+    <list default="true" id="9db2f0bd-872f-4d4e-9dae-a433a7646144" name="Changes" comment="Ergaenze label">
+      <change beforePath="$PROJECT_DIR$/Ausarbeitungen/Vorlage/Inhalt/Einleitung.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Ausarbeitungen/Vorlage/Inhalt/Einleitung.tex" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,17 +20,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Studium/vorlage-ausarbeitungen&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "last_opened_file_path": "D:/Studium/Ausarbeitungen/Vorlage Ausarbeitungen",
+    "show.migrate.to.gradle.popup": "false"
   }
-}</component>
-  <component name="RunManager" selected="LaTeX.Dokument">
+}]]></component>
+  <component name="RunManager" selected="BibTeX.bibliography">
     <configuration default="true" type="BIBTEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
       <texify-bibtex>
         <compiler />
@@ -47,7 +49,7 @@
         <compiler-arguments />
         <envs />
         <main-file>$PROJECT_DIR$/Ausarbeitungen/Vorlage/Dokument.tex</main-file>
-        <aux-dir>$PROJECT_DIR$/auxil</aux-dir>
+        <aux-dir />
       </texify-bibtex>
       <method v="2" />
     </configuration>
@@ -164,7 +166,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666271827747</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Passe Kommentar an">
+      <created>1666299629830</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1666299629830</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Ergaenze label">
+      <created>1666299753887</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1666299753887</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -184,6 +200,8 @@
     <MESSAGE value="Ergaenze Kommentar zu Package bibpunct" />
     <MESSAGE value="Ergaenze Kommentar zu Dokument.tex" />
     <MESSAGE value="Ergaenze .gitignore um /.idea/" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ergaenze .gitignore um /.idea/" />
+    <MESSAGE value="Passe Kommentar an" />
+    <MESSAGE value="Ergaenze label" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ergaenze label" />
   </component>
 </project>
