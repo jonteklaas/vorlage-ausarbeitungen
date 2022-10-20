@@ -36,7 +36,7 @@
 
   #### Dateien anpassen
   * "Unterschrift.jpg" in /Bilder/ mit der eigenen Unterschrift ersetzen.   
-  * ggf. "PHWT Logo" in /Bilder/ mit dem Logo der jeweiligen Institution ersetzen.
+  * Ggf. "PHWT Logo" in /Bilder/ mit dem Logo der jeweiligen Institution ersetzen.
     * Wenn der Name der Datei geändert wird, muss dies auch in der Datei "Befehle.tex" dementsprechend geändert werden.
   
 
