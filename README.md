@@ -10,29 +10,29 @@
   
   #### Run Configurations
   ###### Neue Konfiguration hinzufügen (kompiliert TeX-Dokument):
-    * LaTeX
-    * Compiler: pdfLaTeX
-    * PDF Viewer: No PDF Viewer oder Built-in PDF Viewer (PDF Viewer Plugin benötigt)
-    * Main file to compile: {...}/Ausarbeitungen/{Vorlage}/{Dokument.tex}
-    * Always compile at least twice
-    * Output format: PDF
-    * LaTeX Distribution: MiKTeX
+  * LaTeX
+  * Compiler: pdfLaTeX
+  * PDF Viewer: No PDF Viewer oder Built-in PDF Viewer (PDF Viewer Plugin benötigt)
+  * Main file to compile: {...}/Ausarbeitungen/{Vorlage}/{Dokument.tex}
+  * Always compile at least twic
+  * Output format: PDF
+  * LaTeX Distribution: MiKTeX
     
   ###### Neue Konfiguration hinzufügen (kompiliert Bibliografie):
-    * BibTeX
-    * Compiler: BibTeX
-    * Main file that includews bibliography: {...}/Ausarbeitungen/{Vorlage}/{Dokument.tex}
-    * Working directory for bibtex: {...}/Ausarbeitungen/auxil
+  * BibTeX
+  * Compiler: BibTeX
+  * Main file that includews bibliography: {...}/Ausarbeitungen/{Vorlage}/{Dokument.tex}
+  * Working directory for bibtex: {...}/Ausarbeitungen/auxil
     
   ###### Neue Konfiguration hinzufügen (kompiliert TeX-Dokument mit Bibliografie):
-    * LaTeX
-    * Compiler: pdfLaTeX
-    * PDF Viewer: No PDF Viewer oder Built-in PDF Viewer (PDF Viewer Plugin benötigt)
-    * Main file to compile: {...}/Ausarbeitungen/{Vorlage}/{Dokument.tex}
-    * Always compile at least twice
-    * Output format: PDF
-    * LaTeX Distribution: MiKTeX
-    * External LaTeX programs: {BibTeX Konfiguration}
+  * LaTeX
+  * Compiler: pdfLaTeX
+  * PDF Viewer: No PDF Viewer oder Built-in PDF Viewer (PDF Viewer Plugin benötigt)
+  * Main file to compile: {...}/Ausarbeitungen/{Vorlage}/{Dokument.tex}
+  * Always compile at least twice
+  * Output format: PDF
+  * LaTeX Distribution: MiKTeX
+  * External LaTeX programs: {BibTeX Konfiguration}
 
   #### Dateien anpassen
   * "Unterschrift.jpg" in /Bilder/ mit der eigenen Unterschrift ersetzen.   
