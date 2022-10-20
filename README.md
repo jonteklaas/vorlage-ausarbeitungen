@@ -8,7 +8,7 @@
   * TeXiFy IDEA Plugin
   * PDF Viewer Plugin (optional: zum Ansehen der PDF-Datei in IntelliJ)
   
-  #### Run Configurations (werden automatisch erstellt; *beim Working directory der BibTeX-Konfiguration kann es allerdings zu Fehlern kommen*)
+  #### Run Configurations (werden automatisch erstellt; **beim Working directory der BibTeX-Konfiguration kann es allerdings zu Fehlern kommen: bitte manuell eingeben**)
   ###### Neue Konfiguration hinzufügen (kompiliert TeX-Dokument):
   * LaTeX
   * Compiler: pdfLaTeX
@@ -24,7 +24,7 @@
   * BibTeX
   * Compiler: BibTeX
   * Main file that includes bibliography: {...}/Ausarbeitungen/{Vorlage}/{Dokument.tex}
-  * *Working directory for bibtex: {...}/auxil*
+  * **Working directory for bibtex: {...}/auxil**
     
   ###### Neue Konfiguration hinzufügen (kompiliert TeX-Dokument mit Bibliografie):
   * LaTeX
