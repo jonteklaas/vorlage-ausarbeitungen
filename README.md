@@ -8,7 +8,7 @@
   * TeXiFy IDEA Plugin
   * PDF Viewer Plugin (optional: zum Ansehen der PDF-Datei in IntelliJ)
   
-  #### Run Configurations
+  #### Run Configurations (werden automatisch erstellt)
   ###### Neue Konfiguration hinzufügen (kompiliert TeX-Dokument):
   * LaTeX
   * Compiler: pdfLaTeX
@@ -53,5 +53,5 @@
 * Wenn sich seit des letzten Kompilats Änderungen an der Bibliograpfie ergeben haben, wird die zuletzt erläuterte Konfiguration ausgeführt.
 * Wenn sich seit des letzten Kompilats keine Änderungen an der Bibliograpfie ergeben haben, wird die zuerst erläuterte Konfiguration ausgeführt.
 
-* Wenn kein Kompilierfehler auftritt, wird die PDF-Datei in /out/ gespeichert.
+* Wenn kein Kompilierfehler auftritt, wird die PDF-Datei in ../Dokumente/ gespeichert.
 * Sollte eine neue Section hinzugekommen sein, muss das Dokument zweimal kompiliert werden, damit das Inhaltsverzeichnis die neue Section anzeigt.
