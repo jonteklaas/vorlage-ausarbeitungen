@@ -8,7 +8,7 @@
   * TeXiFy IDEA Plugin
   * PDF Viewer Plugin (optional: zum Ansehen der PDF-Datei in IntelliJ)
   
-  #### Run Configurations
+  #### Run Configurations (werden automatisch erstellt; **beim Working directory der BibTeX-Konfiguration kann es allerdings zu Fehlern kommen: bitte manuell eingeben**)
   ###### Neue Konfiguration hinzufügen (kompiliert TeX-Dokument):
   * LaTeX
   * Compiler: pdfLaTeX
@@ -24,7 +24,7 @@
   * BibTeX
   * Compiler: BibTeX
   * Main file that includes bibliography: {...}/Ausarbeitungen/{Vorlage}/{Dokument.tex}
-  * Working directory for bibtex: {...}/auxil
+  * **Working directory for bibtex: {...}/auxil**
     
   ###### Neue Konfiguration hinzufügen (kompiliert TeX-Dokument mit Bibliografie):
   * LaTeX
@@ -48,10 +48,11 @@
 * Neue Ausarbeitungen können im Ordner "Ausarbeitungen" erstellt werden. Dazu empfehlt es sich, den Ordner "Vorlage" zu kopieren.
 * Der Inhalt der Datei "Parameter.tex" muss auf die jeweilige Ausarbeitung angepasst werden. Es ergibt Sinn, die Datei auch in der Vorlage anzupassen, z.B. den Wert für Matrikelnummer.
 * Der Name der Datei "Dokument.tex" sollte auf die jeweilige Ausarbeitung angepasst werden. Dieser Name muss in die Run Configuration eingetragen werden und ist der Name der erstellten PDF-Datei.
+* Neue Sections sollten in einer neuen .tex Datei geschrieben werden. Diese sollten in dem Ordner Inhalt gespeichert werden und müssen nach dem Erstellen an der richtigen Stelle in Dokument.tex ergänzt werden.
 
 ### Ausarbeitung kompilieren
 * Wenn sich seit des letzten Kompilats Änderungen an der Bibliograpfie ergeben haben, wird die zuletzt erläuterte Konfiguration ausgeführt.
 * Wenn sich seit des letzten Kompilats keine Änderungen an der Bibliograpfie ergeben haben, wird die zuerst erläuterte Konfiguration ausgeführt.
 
-* Wenn kein Kompilierfehler auftritt, wird die PDF-Datei in /out/ gespeichert.
+* Wenn kein Kompilierfehler auftritt, wird die PDF-Datei in ../Dokumente/ gespeichert.
 * Sollte eine neue Section hinzugekommen sein, muss das Dokument zweimal kompiliert werden, damit das Inhaltsverzeichnis die neue Section anzeigt.
