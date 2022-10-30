@@ -1,6 +1,7 @@
 \newcommand{\logo}{../../Bilder/PHWT Logo} % Pfad zum Logo
 
 % Abkürzungen, ggfs. mit korrektem Leerraum
+\newcommand{\AO}{\textsc{Alte Oldenburger}\xspace}
 \newcommand{\bs}{$\backslash$\xspace}
 \newcommand{\bspw}{bspw.\xspace}
 \newcommand{\bzw}{bzw.\xspace}
@@ -16,22 +17,24 @@
 \newcommand{\insb}{insb.\xspace}
 \newcommand{\ua}{\mbox{u.\,a.}\xspace}
 \newcommand{\usw}{usw.\xspace}
-\newcommand{\Vgl}{Vgl.\xspace}
-\newcommand{\vgl}{vgl.\xspace}
+\newcommand{\Vgl}{Vgl.~}
+\newcommand{\vgl}{vgl.~}
 \newcommand{\zB}{\mbox{z.\,B.}\xspace}
+\newcommand{\Prozent}{~\%}
 
 % Befehle für häufig anfallende Aufgaben
 \newcommand{\Abbildung}[1]{\autoref{fig:#1}}
 \newcommand{\Anhang}[1]{\appendixname{}~\ref{#1}: \nameref{#1} \vpageref{#1}}
 \newcommand{\includegraphicsKeepAspectRatio}[2]{\includegraphics[width=#2\textwidth,height=#2\textheight,keepaspectratio]{#1}}
 \newcommand{\includegraphicsRotateAndKeepAspectRatio}[2]{\includegraphics[width=#2\textwidth,height=#2\textheight,keepaspectratio,angle=90,origin=c]{#1}}
-% \newcommand{\Zitat}[2][\empty]{\ifthenelse{\equal{#1}{\empty}}{\citep{#2}}{\citep[#1]{#2}}}
 \newcommand{\Autor}[1]{\textsc{#1}} % zum Ausgeben von Autoren
 \newcommand{\itemd}[2]{\item{\textbf{#1}}\\{#2}} % erzeugt ein Listenelement mit fetter Überschrift
 \newcommand{\Abschnitt}[1]{Abschnitt~\ref{sec:#1}~(\nameref{sec:#1})}
 \newcommand{\Kapitel}[1]{Kapitel~\ref{sec:#1}~(\nameref{sec:#1})}
 
-% verschiedene Befehle um Wörter semantisch auszuzeichnen ----------------------
-\newcommand{\Index}[2][\empty]{\ifthenelse{\equal{#1}{\empty}}{\index{#2}#2}{\index{#1}#2}}
-\newcommand{\Fachbegriff}[2][\empty]{\ifthenelse{\equal{#1}{\empty}}{\textit{\Index{#2}}}{\textit{\Index[#1]{#2}}}}
-\newcommand{\NeuerBegriff}[2][\empty]{\ifthenelse{\equal{#1}{\empty}}{\textbf{\Index{#2}}}{\textbf{\Index[#1]{#2}}}}
+% Zitate (z.B. \ZitatiC[S.~69]{Martin2008a})
+\newcommand{\ZitatiC}[2][\empty]{\footnote{\Vgl \allgemeinesZitat[#1]{#2}.}} % indirektes Zitat im Chicago-Style
+\newcommand{\ZitatdC}[2][\empty]{\footnote{\allgemeinesZitat[#1]{#2}.}} % direktes Zitat im Chicago-Style
+\newcommand{\ZitatiH}[2][\empty]{ (\vgl \allgemeinesZitat[#1]{#2})} % indirektes Zitat im Harvard-Style
+\newcommand{\ZitatdH}[2][\empty]{ (\allgemeinesZitat[#1]{#2})} % direktes Zitat im Harvard-Style
+\newcommand{\allgemeinesZitat}[2][\empty]{\ifthenelse{\equal{#1}{\empty}}{\citep{#2}}{\citep[#1]{#2}}}
