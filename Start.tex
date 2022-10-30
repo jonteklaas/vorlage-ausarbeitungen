@@ -30,12 +30,14 @@
     \clearpage
 
 % Abkürzungsverzeichnis --------------------------------------------------------
+    \ihead{\large{\textsc{\titel}}\\ \small{\untertitel} \\[2ex] \textit{Abkürzungsverzeichnis}} % in Kopfzeile steht Abkürzungsverzeichnis
     \newcommand{\abkvz}{Abkürzungsverzeichnis}
     \renewcommand{\nomname}{\abkvz}
     \section*{\abkvz}
     \addcontentsline{toc}{section}{\abkvz}
     \input{../../Abkuerzungen}
     \clearpage
+    \ihead{\large{\textsc{\titel}}\\ \small{\untertitel} \\[2ex] \textit{\headmark}} % Kopfzeile wird für weitere Kapitel automatisch generiert
 
     % Inhalt
     \clearpage
