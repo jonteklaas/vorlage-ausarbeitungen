@@ -178,11 +178,11 @@ ENTRY
 
 %  Abkuerzung ("... und andere") bei Mehrverfasserquellen:
 
-FUNCTION { ua.etal } { " u.\,a." }  %% evtl. auch in eckigen Klammern  " [u.\,a.]"
+% FUNCTION { ua.etal } { " u.\,a." }  %% evtl. auch in eckigen Klammern  " [u.\,a.]"
 
-%%  oder lateinisch:  FUNCTION { ua.etal } { " et~al." }
+FUNCTION { ua.etal } { " et~al." }
 
-FUNCTION { und } { " und " }
+FUNCTION { und } { "/" }
 
 %%  oder ausgeschrieben:  FUNCTION { und } { " und " }
 
@@ -443,7 +443,7 @@ FUNCTION {format.maillist.lastcheck}
            'skip$
          if$
        }
-       'skip$ 
+       'skip$
      if$
    }
 
@@ -489,7 +489,7 @@ FUNCTION {format.url}
 FUNCTION {format.maillist.url}
   { url empty$
        { "" }
-       { type empty$ 
+       { type empty$
              { "" }
              { type #-1 #4 substring$ "mail" =
                type #1 #4 substring$ "Mail" =
@@ -577,7 +577,7 @@ FUNCTION {make.full.names}
 
 FUNCTION {output.bibitem}
 { newline$
-  "\bibitem[\scshape{}" write$
+  "\bibitem[{}" write$
   label write$
   ")" make.full.names duplicate$ short.list =
      { pop$ }
@@ -616,7 +616,7 @@ FUNCTION {emphasize}
 FUNCTION { capitalize }
  { duplicate$ empty$
     { pop$ "" }
-    { "\textsc{" swap$ * "}" * }
+    { "{" swap$ * "}" * }
   if$
 }
 
@@ -670,7 +670,7 @@ FUNCTION {format.names}
                   { " " * }
                   'skip$
                if$
-               t "\textsc{others}" = t "\textsc{others} (Hrsg.)" = or
+               t "{others}" = t "{others} (Hrsg.)" = or
                   { ua.etal * }
                   { " ; " * t * }
                if$
